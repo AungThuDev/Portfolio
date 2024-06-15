@@ -56,7 +56,7 @@ a.active,a:hover{
 .home{
     display: flex;
     width: 93%;
-    margin: 0px auto;
+    margin: 50px auto;
     justify-content: space-between;
     height: 80vh;
     align-items: center;
@@ -117,8 +117,66 @@ a.active,a:hover{
     font-size: 1.3rem;
     margin-right: 15px;
 }
+.social-icons a:hover{
+    background-color: #ed8447;
+}
+.social-icons a:hover .icon{
+    color: #fff;
+    transition: 0.5s ;
+}
 .icon{
     color: #BD5D38;
+}
+.btn{
+    padding: 10px 20px;
+    background-color: #BD5D38;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    margin-top: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.btn:hover{
+    background-color: #ed8447;
+}
+/*****AboutSection*****/
+.about-div{
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+.about{
+    display: flex;
+    width: 93%;
+    justify-content: space-between;
+    margin: 50px auto;
+}
+.sub-head{
+    font-size: 30px;
+}
+.about-span{
+    color: #BD5D38;
+}
+.about-image-div{
+    width: 90%;
+    height: 450px;
+    z-index: 1;
+}
+.about-image{
+    width: 105%;
+    height: 450px;
+    border: 3px solid #BD5D38;
+    border-radius: 10px;
+}
+.about-text-div{
+    display: flex;
+    flex-direction: column;
+    padding-left: 7%;
+    padding-top:7% ;
+}
+#readBtn{
+    width: 20%;
 }
 @media(max-width:992px){
     /*****NavigationBar*****/
@@ -176,7 +234,8 @@ a.active,a:hover{
     .home{
         flex-direction: column;
         margin-top: 30px;
-        height: 70vh;
+        height: 600px;
+        align-items: center;
     }
     .home-text-div{
         order: 2;
@@ -185,11 +244,17 @@ a.active,a:hover{
         order: 1;
     }
     .home-img{
-        width: 250px;
-        height: 250px;
-        line-height: 250px;
+        width: 200px;
+        height: 200px;
+        line-height: 200px;
         margin-right: 0px;
         animation: floatImage 3s ease-in-out infinite;
+    }
+    .social-icons a{
+        margin-top: 20px;
+    }
+    .btn{
+        margin-top: 20px;
     }
     @keyframes floatImage {
         0%{
@@ -203,11 +268,39 @@ a.active,a:hover{
     .head{
         font-size: 25px;
     }
+    .head:nth-child(2) {
+        margin-top: 50px;
+      }
     .home-head{
         font-size: 35px;
     }
     .para{
         text-align: justify;
     }
-    
+    /*****AboutSection*****/
+    .about-div{
+        padding-left: 0px;
+        padding-right:0px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .about{
+        /* margin-top: 300px; */
+        flex-direction: column;
+        width: 93%;
+    }
+    .about-image-div{
+        width: 95%;
+        height: 350px;
+    }
+    .about-image{
+        height: 350px;
+    }
+    .about-text-div{
+        padding-left: 0;
+    }
+    #readBtn{
+        padding: 10px 10px;
+        width: 30%;
+    }
 }
