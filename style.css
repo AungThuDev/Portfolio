@@ -24,11 +24,11 @@ label.logo{
     line-height: 60px;
     padding: 0 50px;
     font-weight: bold;
-    margin-left: 120px;
+    margin-left: 6%;
 }
 nav ul{
     float: right;
-    margin-right: 170px;
+    margin-right: 8%;
 }
 nav ul li{
     display: inline-block;
@@ -71,6 +71,7 @@ a.active,a:hover{
     flex: 3;
     order: 1;
     margin-right: 7%;
+    margin-top: 5%;
 }
 .home-image-div{
     flex: 1;
@@ -179,7 +180,7 @@ a.active,a:hover{
     display: flex;
     flex-direction: column;
     padding-left: 7%;
-    padding-top:7% ;
+    padding-top:1% ;
 }
 #readBtn{
     width: 20%;
