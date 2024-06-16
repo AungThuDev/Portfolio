@@ -177,6 +177,7 @@ a.active,a:hover{
         flex-direction: column;
         margin-top: 30px;
         height: 70vh;
+        background-color: red;
     }
     .home-text-div{
         order: 2;
@@ -185,6 +186,9 @@ a.active,a:hover{
         order: 1;
     }
     .home-img{
+        width: 250px;
+        height: 250px;
+        line-height: 250px;
         margin-right: 0px;
         animation: floatImage 3s ease-in-out infinite;
     }
@@ -206,4 +210,5 @@ a.active,a:hover{
     .para{
         text-align: justify;
     }
+    
 }
