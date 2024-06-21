@@ -11,6 +11,9 @@ body{
     margin: 0;
     padding: 0;
 }
+.animate__animated {
+    --animate-duration: 2s;
+  }
 /*****NavigationBar*****/
 nav{
     background: #BD5D38;
@@ -83,14 +86,14 @@ a.active,a:hover{
 .position{
     color: #BD5D38;
 }
-.head{
+.title-head{
     font-size: 40px;
 }
 
 .home-head{
     font-size: 50px;
 }
-.para{
+.para-div{
     font-size: 20px;
 }
 .home-img{
@@ -208,7 +211,12 @@ a.active,a:hover{
     align-items: center;
     width: 100%;
 }
-.card{
+.card1{
+    width: 48%;
+    border: 2px solid #BD5D38;
+    border-radius: 5px;
+}
+.card2{
     width: 48%;
     border: 2px solid #BD5D38;
     border-radius: 5px;
@@ -419,6 +427,7 @@ input[type=text],input[type=email]{
     padding: 10px;
     border-radius: 5px;
 }
+/*****Footer****/
 .footer{
     background-color: #000;
     display: flex;
@@ -483,7 +492,7 @@ input[type=text],input[type=email]{
     .home-image-div{ 
         flex: 1.5;
     }
-    .head{
+    .title-head{
         font-size: 30px;
     }
     .home-head{
@@ -517,11 +526,27 @@ input[type=text],input[type=email]{
         width: 40%;
         margin-top: 15px;
     }
+    /*****SkillSection*****/
+    .skills{
+        width: 90%;
+    }
+    .skill-card{
+        flex-direction: column;
+    }
+    .card1{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .card2{
+        width: 100%;
+        margin-bottom: 30px;
+    }
     /*****ProjectsSection*****/
     .projects{
         justify-content: space-evenly;
     }
     .projects-div{
+        width: 90%;
         margin-top: -30px!important;
     }
     .box{
@@ -529,6 +554,10 @@ input[type=text],input[type=email]{
     }
     .prj-image{
         height: 250px;
+    }
+    /*****Contact*****/
+    .form{
+        width: 90%;
     }
 }
 
@@ -608,16 +637,16 @@ input[type=text],input[type=email]{
             transform: translateY(0);
         }
     }
-    .head{
+    .title-head{
         font-size: 25px;
     }
-    .head:nth-child(2) {
+    .title-head:nth-child(2) {
         margin-top: 50px;
       }
     .home-head{
         font-size: 35px;
     }
-    .para{
+    .para-div{
         text-align: justify;
     }
     /*****AboutSection*****/
@@ -649,14 +678,24 @@ input[type=text],input[type=email]{
         padding: 10px 10px;
         width: 30%;
     }
+    /******SkillSection*****/
+    .skill-card{
+        width: 90%;
+    }
     /*****ProjectsSection*****/
     .projects{
         height: auto;
+    }
+    .projects-div{
+        width: 80%;
     }
     .box{
         width: 100%;
     }
     /*****Contact*****/
+    .form{
+        width: 80%;
+    }
     .nameEmail{
         flex-direction: column;
     }

@@ -21,7 +21,11 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
       rel="stylesheet"
     />
-    
+    <!--Animate CSS-->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
 
   <body>
@@ -43,7 +47,7 @@
     <!--Home Section-->
     <div id="home"></div>
     <section class="home">
-      <div class="home-text-div">
+      <div class="home-text-div animate__animated animate__bounceInDown">
         <h2 class="head">Hi, Myself</h2>
         <h1 class="home-head">Aung Thu Htut</h1>
         <h2 class="head">
@@ -74,9 +78,9 @@
           <img src="images/ath.jpg" alt="AboutImage" class="about-image" />
         </div>
         <div class="about-text-div">
-          <h2 class="head">About <span class="about-span">Me</span></h2>
+          <h2 class="title-head">About <span class="about-span">Me</span></h2>
           <h3 class="sub-head">Web Developer</h3>
-          <p class="para">
+          <p class="para-div">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores
             quam consequatur itaque dolore dignissimos temporibus, ipsum
             veritatis pariatur quidem illo delectus minus, provident enim!
@@ -91,7 +95,7 @@
     <section class="skills">
         <h2 class="head" id="skills">My <span class="about-span">Skills</span></h2>
         <div class="skill-card">
-          <div class="card">
+          <div class="card1">
             <div class="card-header">
               <h4>Web Design Skills</h4>
             </div>
@@ -123,7 +127,7 @@
             </div>
           </div>
           
-          <div class="card">
+          <div class="card2">
             <div class="card-header">
               <h4>Web Development Skills</h4>
             </div>
@@ -235,5 +239,6 @@
     <footer class="footer">
         <p>&copy;copyright 2024, Powered by ATH.</p>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
