@@ -86,7 +86,7 @@ a.active,a:hover{
 .position{
     color: #BD5D38;
 }
-.title-head{
+.head{
     font-size: 40px;
 }
 
@@ -492,7 +492,7 @@ input[type=text],input[type=email]{
     .home-image-div{ 
         flex: 1.5;
     }
-    .title-head{
+    .head{
         font-size: 30px;
     }
     .home-head{

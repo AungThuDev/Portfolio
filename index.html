@@ -51,7 +51,7 @@
         <h2 class="head">Hi, Myself</h2>
         <h1 class="home-head">Aung Thu Htut</h1>
         <h2 class="head">
-          And I'm a <span class="position">Web Developer</span>
+          And I'm a <span class="position" id="multiple-text"></span>
         </h2>
         <p class="para">
           I am Aung Thu Htut, a passionate and skilled Web Developer with a
@@ -239,6 +239,19 @@
     <footer class="footer">
         <p>&copy;copyright 2024, Powered by ATH.</p>
     </footer>
+    <!--Script JS-->
     <script src="script.js"></script>
+    <!--Typed JS-->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      /*Type JS */
+    const typed = new Typed('#multiple-text',{
+      strings: ['Web Developer','Web Designer'],
+      typeSpeed: 70,
+      backSpeed: 70,
+      backDelay: 1000,
+      loop: true,
+    });
+    </script>
   </body>
 </html>
