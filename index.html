@@ -21,6 +21,7 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
       rel="stylesheet"
     />
+    
   </head>
 
   <body>
@@ -32,14 +33,15 @@
       </label>
       <label for="" class="logo">Portfolio</label>
       <ul>
-        <li><a href="" class="active">Home</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Skills</a></li>
-        <li><a href="">Projects</a></li>
-        <li><a href="">Contact</a></li>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skill">Skills</a></li>
+        <li><a href="#project">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
     <!--Home Section-->
+    <div id="home"></div>
     <section class="home">
       <div class="home-text-div">
         <h2 class="head">Hi, Myself</h2>
@@ -64,6 +66,8 @@
         <img src="images/ath.jpg" alt="HomeImage" class="home-img"/>
       </div>
     </section>
+    <!--AboutSection-->
+    <div id="about"></div>
     <div class="about-div">
       <section class="about">
         <div class="about-image-div">
@@ -82,10 +86,80 @@
         </div>
       </section>
     </div>
-    <!-- <section class="skills" style="background-color: red;">
-        <h2 class="head">My <span class="about-span">Skills</span></h2>
-    </section> -->
-    <section class="projects">
+    <!--SkillSection-->
+    <div id="skill"></div>
+    <section class="skills">
+        <h2 class="head" id="skills">My <span class="about-span">Skills</span></h2>
+        <div class="skill-card">
+          <div class="card">
+            <div class="card-header">
+              <h4>Web Design Skills</h4>
+            </div>
+            <div class="card-body">
+              <div class="prograssbar">
+                <h5 class="prograss-head">HTML&nbsp;<i class="fa-brands fa-html5 skill-icon"></i></h5>
+                <div class="prograss">
+                  <div class="fill a" style="width: 80%;"><span class="skill-text">80%</span></div>
+                </div>
+              </div>
+              <div class="prograssbar">
+                <h5 class="prograss-head">CSS&nbsp;<i class="fa-brands fa-css3-alt skill-icon"></i></h5>
+                <div class="prograss">
+                  <div class="fill a" style="width: 75%;"><span class="skill-text">75%</span></div>
+                </div>
+              </div>
+              <div class="prograssbar">
+                <h5 class="prograss-head">Bootstrap&nbsp;<i class="fa-brands fa-bootstrap skill-icon"></i></h5>
+                <div class="prograss">
+                  <div class="fill a" style="width: 80%;"><span class="skill-text">80%</span></div>
+                </div>
+              </div>
+              <div class="prograssbar">
+                <h5 class="prograss-head">Tailwind CSS</h5>
+                <div class="prograss">
+                  <div class="fill a" style="width: 60%;"><span class="skill-text">60%</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="card">
+            <div class="card-header">
+              <h4>Web Development Skills</h4>
+            </div>
+            <div class="card-body">
+              <div class="prograssbar">
+                <h5 class="prograss-head">PHP&nbsp;<i class="fa-brands fa-php skill-icon"></i></h5>
+                <div class="prograss">
+                  <div class="fill a" style="width: 70%;"><span class="skill-text">70%</span></div>
+                </div>
+              </div>
+              <div class="prograssbar">
+                <h5 class="prograss-head">Laravel&nbsp;<i class="fa-brands fa-laravel skill-icon"></i></h5>
+                <div class="prograss">
+                  <div class="fill a" style="width: 70%;"><span class="skill-text">70%</span></div>
+                </div>
+              </div>
+              <div class="prograssbar">
+                <h5 class="prograss-head">Javascript&nbsp;<i class="fa-brands fa-js skill-icon"></i></h5>
+                <div class="prograss">
+                  <div class="fill a" style="width: 50%;"><span class="skill-text">50%</span></div>
+                </div>
+              </div>
+              <div class="prograssbar">
+                <h5 class="prograss-head">VueJS&nbsp;<i class="fa-brands fa-vuejs skill-icon"></i></h5>
+                <div class="prograss">
+                  <div class="fill a" style="width: 60%;"><span class="skill-text">60%</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+    </section>
+    <!--ProjectSection-->
+    <div id="project"></div>
+    <section class="projects" style="background-color: #f2f2f2;">
       <h2 class="head" id="prj-head">Recent <span class="about-span">Projects</span></h2>
       <div class="projects-div">
         <div class="box">
@@ -138,6 +212,8 @@
         </div>
       </div>
     </section>
+    <!--ContactSection-->
+    <div id="contact"></div>
     <section class="contact">
     <form action="" class="form" style="background-color: #f2f2f2;">
       <h2 class="head" id="contact-head">Contact <span class="about-span">Me</span></h2>
@@ -158,6 +234,6 @@
     </section>
     <footer class="footer">
         <p>&copy;copyright 2024, Powered by ATH.</p>
-    </footer> 
+    </footer>
   </body>
 </html>
