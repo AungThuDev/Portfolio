@@ -33,21 +33,22 @@
     <nav>
       <input type="checkbox" id="check" />
       <label for="check" class="checkbtn">
-        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
       </label>
       <label for="" class="logo">Portfolio</label>
-      <ul>
-        <li><a href="#home" class="active">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skill">Skills</a></li>
-        <li><a href="#project">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <ul class="dropdown_menu">
+        <li><a href="#home" class="active link">Home</a></li>
+        <li><a href="#about" class="link">About</a></li>
+        <li><a href="#skill" class="link">Skills</a></li>
+        <li><a href="#project" class="link">Projects</a></li>
+        <li><a href="#contact" class="link">Contact</a></li>
       </ul>
     </nav>
     <!--Home Section-->
-    <div id="home"></div>
+    <section class="body">
+      <div id="home"></div>
     <section class="home">
-      <div class="home-text-div animate__animated animate__bounceInDown">
+      <div class="home-text-div">
         <h2 class="head">Hi, Myself</h2>
         <h1 class="home-head">Aung Thu Htut</h1>
         <h2 class="head">
@@ -239,11 +240,39 @@
     <footer class="footer">
         <p>&copy;copyright 2024, Powered by ATH.</p>
     </footer>
+    </section>
     <!--Script JS-->
     <script src="script.js"></script>
     <!--Typed JS-->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
     <script>
+
+document.getElementById('check').addEventListener('change', function() {
+    const menuIcon = document.getElementById('menu-icon');
+    if (this.checked) {
+      menuIcon.classList.remove('fa-bars');
+      menuIcon.classList.add('fa-times');
+    } else {
+      menuIcon.classList.remove('fa-times');
+      menuIcon.classList.add('fa-bars');
+    }
+  });
+// Get all links inside the dropdown menu
+const links = document.querySelectorAll('.dropdown_menu .link');
+  const checkbox = document.getElementById('check');
+
+  // Add a click event listener to each link
+  links.forEach(link => {
+    link.addEventListener('click', () => {
+      checkbox.checked = false;
+      // Toggle the icon back to the hamburger menu
+      const menuIcon = document.getElementById('menu-icon');
+      menuIcon.classList.remove('fa-times');
+      menuIcon.classList.add('fa-bars');
+    });
+  });
       /*Type JS */
     const typed = new Typed('#multiple-text',{
       strings: ['Web Developer','Web Designer'],
@@ -252,6 +281,8 @@
       backDelay: 1000,
       loop: true,
     });
+
+    
     </script>
   </body>
 </html>

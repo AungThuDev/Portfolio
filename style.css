@@ -34,6 +34,7 @@ label.logo{
 nav ul{
     float: right;
     margin-right: 8%;
+    
 }
 nav ul li{
     display: inline-block;
@@ -182,6 +183,7 @@ a.active,a:hover{
     height: auto;
     border: 3px solid #BD5D38;
     border-radius: 10px;
+    animation: aboutImage 2s ease-in-out;
 }
 .about-text-div{
     display: flex;
@@ -191,6 +193,14 @@ a.active,a:hover{
 }
 #readBtn{
     width: 20%;
+}
+@keyframes aboutImage {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
 }
 /*****SkillsSection*****/
 .skills{
@@ -456,7 +466,7 @@ input[type=text],input[type=email]{
     }
     nav ul{
         position: fixed;
-        width: 100%;
+        width: 80%;
         height: 100vh;
         background: #BD5D38;
         top: 60px;
@@ -555,6 +565,9 @@ input[type=text],input[type=email]{
     .prj-image{
         height: 250px;
     }
+    .box:hover .overlay{
+        height: 150%;
+    }
     /*****Contact*****/
     .form{
         width: 90%;
@@ -644,7 +657,10 @@ input[type=text],input[type=email]{
         margin-top: 50px;
       }
     .home-head{
-        font-size: 35px;
+        font-size: 30px;
+    }
+    .head{
+        font-size: 25px;
     }
     .para-div{
         text-align: justify;
@@ -691,6 +707,9 @@ input[type=text],input[type=email]{
     }
     .box{
         width: 100%;
+    }
+    .box:hover .overlay{
+        height: 150%;
     }
     /*****Contact*****/
     .form{
